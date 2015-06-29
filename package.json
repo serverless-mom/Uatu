@@ -1,0 +1,24 @@
+{
+  "name": "uatu",
+  "version": "0.1.0",
+  "description": "Gets system stats and does stuff with 'em",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobyfee/Uatu.git"
+  },
+  "keywords": [
+    "system",
+    "monitor",
+    "healthcheck"
+  ],
+  "author": "Toby Fee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tobyfee/Uatu/issues"
+  },
+  "homepage": "https://github.com/tobyfee/Uatu#readme"
+}

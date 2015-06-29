@@ -1,6 +1,15 @@
-os=require('os');
+var os=require('os');
+var sys = require('sys')
+var exec = require('child_process').exec;
+var CronJob = require('cron').CronJob;
 
-const fifteenMinNormalizedLoadAvg = os.loadavg()[2]/os.cpus().length;
+var fifteenMinNormalizedLoadAvg = 0.0;
 
-console.log("fifteen minute load avg, normalized by CPU number: "+
-fifteenMinNormalizedLoadAvg);
+new CronJob('* * * * * *', function(){
+  exec("date", console.log);
+
+  fifteenMinNormalizedLoadAvg = os.loadavg()[2]/os.cpus().length;
+
+  console.log("fifteen minute load avg, normalized by CPU number: "+
+  fifteenMinNormalizedLoadAvg);
+}, null, true, "America/Los_Angeles");
