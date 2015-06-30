@@ -2,7 +2,7 @@
   "name": "uatu",
   "version": "0.1.0",
   "description": "Gets system stats and does stuff with 'em",
-  "main": "start.js",
+  "main": "statgetter.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
